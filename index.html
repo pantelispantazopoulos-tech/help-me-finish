@@ -242,13 +242,10 @@
   .game-icon{
     width:64px;height:64px;
     border-radius:16px;
-    background:linear-gradient(135deg,var(--teal),#00897b);
-    display:flex;align-items:center;justify-content:center;
-    color:#fff;
-    font-weight:900;
-    font-size:1.4rem;
+    overflow:hidden;
     flex-shrink:0;
   }
+  .game-icon img{width:100%;height:100%;object-fit:cover;}
   .game-card h3{margin:0 0 4px;font-size:1.2rem;}
   .game-card .tag{
     display:inline-block;
@@ -440,7 +437,7 @@
     <h2 class="accent-dot">Also Building Something</h2>
     <p class="lede">I'm not just asking — I'm working toward this from another angle too.</p>
     <div class="game-card">
-      <div class="game-icon">M</div>
+      <div class="game-icon"><img src="images/mannerism-logo.png" alt="Mannerism game logo"></div>
       <div>
         <div class="tag">In Development · Releasing Soon</div>
         <h3>Mannerism — a narrative puzzle game</h3>
